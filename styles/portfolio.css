@@ -56,22 +56,33 @@ p {
   color: #272142;
 }
 
-.about-section {
+.content-container {
   padding: 10rem 0;
 }
 
-.about-section h1 {
+.content h1 {
   font-size: 3rem;
   line-height: 1.1;
 }
 
-.about-section h2 {
+.content h2 {
   font-size: 1.2rem;
   font-family: var(--default-font-family);
 }
 
-.about-section-content {
+.content h3 {
+  font-family: var(--default-font-family);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.content p {
+  font-size: 0.9rem;
+}
+
+.content {
   margin: 0 1rem;
+  text-align: center;
 }
 
 .btn-branding {
@@ -106,7 +117,7 @@ p {
   .hero {
     padding: 5rem 0;
   }
-  .about-section {
+  .content-container {
     text-align: center;
     padding: 3rem;
   }
@@ -119,7 +130,7 @@ p {
   h2 {
     font-size: 3rem;
   }
-  .about-section {
+  .content-container {
     padding: 0;
   }
 }
