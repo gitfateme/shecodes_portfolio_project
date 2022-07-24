@@ -27,7 +27,8 @@ h6 {
 h1 {
   font-size: 5rem;
 }
-h2 {
+h2,
+h4 {
   font-size: 3rem;
 }
 
@@ -139,6 +140,44 @@ nav li.active a {
   padding: 0 3.75rem;
 }
 
+footer {
+  margin: 4.5rem 0;
+}
+
+footer .contact-box {
+  background-color: var(--secondary-color);
+  padding: 2rem 5rem;
+  border-radius: 0.7rem;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: #272142;
+  font-size: 1.7rem;
+}
+
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+
+footer .social-links a {
+  margin: 0 1.2rem;
+  color: var(--branding-color);
+  background-color: var(--secondary-color);
+  font-size: 1.5rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 50%;
+  transition: all ease-in 0.1s;
+}
+footer .social-links a:hover {
+  color: white;
+  background-color: var(--branding-color);
+}
+
 @media (max-width: 960px) {
   html {
     font-size: 12px;
@@ -156,6 +195,13 @@ nav li.active a {
   }
 }
 
+@media (min-width: 990px) {
+  .work-container img {
+    height: 250px;
+    width: auto;
+  }
+}
+
 @media (max-width: 500px) {
   h1 {
     font-size: 5rem;
@@ -165,5 +211,20 @@ nav li.active a {
   }
   .content-container {
     padding: 0;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  footer .contact-box {
+    padding: 1.5rem;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .email-link {
+    display: none;
   }
 }
